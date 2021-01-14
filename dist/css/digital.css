@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 626px) {
+  .main-container header h1 {
+    font-size: 1.2rem;
+  }
+  .main-container .clock.clock {
+    height: 300px;
+    width: 300px;
+  }
+  .main-container .clock__hour {
+    left: 49%;
+    top: 33%;
+  }
+}
+
+@media (min-width: 626px) {
+  .wrapper .container .container__clock {
+    height: 100px;
+    width: 500px;
+  }
+  .wrapper .container .container__clock .time {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper .container .container__clock {
+    height: 150px;
+    width: 900px;
+  }
+  .wrapper .container .container__clock .time {
+    font-size: 3.4rem;
+  }
+}
+
+body {
+  background-color: #252525;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.wrapper .container {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .container__clock {
+  height: 70px;
+  width: 250px;
+  background-color: #207398;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.wrapper .container__clock .time {
+  font-size: 1.2rem;
+  font-family: "Audiowide", cursive;
+}
+
+.wrapper footer {
+  height: 20vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper footer a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.wrapper footer a:hover {
+  color: #207398;
+}
+/*# sourceMappingURL=digital.css.map */

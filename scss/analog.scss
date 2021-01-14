@@ -1,0 +1,71 @@
+@import "config";
+@import "responsive";
+
+body {
+	font-family: $font-stylish;
+	color: color(light);
+	background-color: color(dark);
+}
+
+.main-container {
+	width: 100vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	header {
+		font-size: fontSize(1);
+	}
+
+	.clock {
+		position: relative;
+		height: 200px;
+		width: 200px;
+		background: url("/dist/img/clock.png") no-repeat;
+		background-size: 100%;
+
+		&__hour {
+			height: 50px;
+			width: 5px;
+			border-radius: 10px;
+			background-color: color(dark);
+			position: absolute;
+			left: 48.5%;
+			top: 25%;
+			transform-origin: bottom;
+		}
+		&__minute {
+			height: 65px;
+			width: 3.5px;
+			border-radius: 10px;
+			background-color: color(dark);
+			position: absolute;
+			left: 48.9%;
+			top: 17.8%;
+			transform-origin: bottom;
+		}
+		&__second {
+			height: 80px;
+			width: 2px;
+			border-radius: 10px;
+			background-color: color(dark);
+			position: absolute;
+			left: 49.2%;
+			top: 10.1%;
+			transform-origin: bottom;
+		}
+
+		&__second::after {
+			content: "";
+			position: absolute;
+			bottom: -4.2px;
+			left: -3.7px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: color(dark);
+		}
+	}
+}

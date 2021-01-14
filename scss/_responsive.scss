@@ -1,0 +1,58 @@
+// Analog Clock
+
+@include media-md {
+	.main-container {
+		header {
+			h1 {
+				font-size: fontSize(2);
+			}
+		}
+
+		.clock {
+			&.clock {
+				height: 300px;
+				width: 300px;
+			}
+
+			&__hour {
+				left: 49%;
+				top: 33%;
+			}
+		}
+	}
+}
+
+@include media-lg {
+}
+
+// Digital Clock
+
+@include media-md {
+	.wrapper {
+		.container {
+			.container__clock {
+				height: 100px;
+				width: 500px;
+
+				.time {
+					font-size: fontSize(3);
+				}
+			}
+		}
+	}
+}
+
+@include media-lg {
+	.wrapper {
+		.container {
+			.container__clock {
+				height: 150px;
+				width: 900px;
+
+				.time {
+					font-size: fontSize(4);
+				}
+			}
+		}
+	}
+}

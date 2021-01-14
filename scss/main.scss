@@ -1,0 +1,75 @@
+@import "config";
+@import "responsive";
+
+body {
+	font-family: $font-normal;
+	color: color(dark);
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem 1.5rem;
+	align-items: center;
+
+	.heading {
+		font-size: fontSize(3);
+		letter-spacing: 1px;
+	}
+
+	.clock-btn {
+		height: 140px;
+		// width: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		.clock-btn__analog {
+			//use scss @include
+			height: 50px;
+			width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: color(blue);
+			font-size: fontSize(2);
+			color: color(dark);
+			letter-spacing: 1px;
+			font-weight: bold;
+			border-radius: 50px;
+		}
+
+		.clock-btn__digital {
+			//use scss @include
+			height: 50px;
+			width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: color(dark);
+			color: color(blue);
+			font-size: fontSize(2);
+			letter-spacing: 1px;
+			font-weight: bold;
+			border-radius: 50px;
+		}
+	}
+
+	footer {
+		.copyright-details {
+			font-size: fontSize(1);
+			letter-spacing: 0.3px;
+
+			.instagram-link {
+				color: color(blue);
+			}
+			.instagram-link:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
