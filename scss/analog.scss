@@ -2,21 +2,25 @@
 @import "responsive";
 
 body {
-	font-family: $font-stylish;
+	font-family: $font-normal;
 	color: color(light);
 	background-color: color(dark);
 }
 
 .main-container {
 	width: 100vw;
-	height: 85vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 2rem 1.5rem;
 
 	header {
-		font-size: fontSize(1);
+		h1 {
+			font-size: fontSize(3);
+			letter-spacing: 2px;
+		}
 	}
 
 	.clock {
@@ -55,17 +59,24 @@ body {
 			left: 49.2%;
 			top: 10.1%;
 			transform-origin: bottom;
-		}
 
-		&__second::after {
-			content: "";
-			position: absolute;
-			bottom: -4.2px;
-			left: -3.7px;
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-			background-color: color(dark);
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -4.2px;
+				left: -3.7px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: color(dark);
+			}
+		}
+	}
+
+	.choose-clock {
+		a {
+			color: color(blue);
+			letter-spacing: 1px;
 		}
 	}
 }

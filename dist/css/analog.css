@@ -44,14 +44,14 @@ a {
 }
 
 body {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   background-color: #252525;
 }
 
 .main-container {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,12 +62,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1.5rem;
 }
 
-.main-container header {
-  font-size: 0.7rem;
+.main-container header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .main-container .clock {
@@ -123,5 +126,10 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: #252525;
+}
+
+.main-container .choose-clock a {
+  color: #207398;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=analog.css.map */

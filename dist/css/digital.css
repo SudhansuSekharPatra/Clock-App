@@ -45,13 +45,32 @@ a {
 
 body {
   background-color: #252525;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
 .wrapper {
   height: 100vh;
   width: 100%;
-  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+.wrapper header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .wrapper .container {
@@ -85,7 +104,8 @@ body {
 }
 
 .wrapper .container__clock .time {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
   font-family: "Audiowide", cursive;
 }
 
@@ -116,5 +136,10 @@ body {
 
 .wrapper footer a:hover {
   color: #207398;
+}
+
+.wrapper .choose-clock a {
+  color: #207398;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=digital.css.map */
