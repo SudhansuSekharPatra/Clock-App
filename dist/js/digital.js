@@ -1,4 +1,4 @@
-setInterval(clock, 500);
+setInterval(clock, 1000);
 
 function clock() {
 	let currentDate = new Date();
