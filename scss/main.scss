@@ -1,5 +1,4 @@
 @import "config";
-@import "responsive";
 
 body {
 	font-family: $font-normal;
@@ -73,3 +72,5 @@ body {
 		}
 	}
 }
+
+@import "responsive";

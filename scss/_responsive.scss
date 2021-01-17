@@ -1,57 +1,149 @@
-// Analog Clock
-
 @include media-md {
+	// Main Page
+
+	.main {
+		.heading {
+			font-size: fontSize(5);
+		}
+
+		.clock-btn {
+			height: 190px;
+
+			.clock-btn__analog {
+				height: 70px;
+				width: 250px;
+				font-size: fontSize(3);
+			}
+
+			.clock-btn__digital {
+				height: 70px;
+				width: 250px;
+				font-size: fontSize(3);
+			}
+		}
+	}
+
+	// Analog Clock
+
 	.main-container {
 		header {
 			h1 {
-				font-size: fontSize(2);
+				font-size: fontSize(5);
+				letter-spacing: 4px;
 			}
 		}
 
 		.clock {
-			&.clock {
-				height: 300px;
-				width: 300px;
-			}
+			height: 300px;
+			width: 300px;
 
 			&__hour {
-				left: 49%;
-				top: 33%;
+				height: 70px;
+				width: 7px;
+				left: 49.2%;
+				top: 26.6%;
+			}
+
+			&__minute {
+				height: 94px;
+				width: 4.5px;
+				left: 49.4%;
+				top: 18.2%;
+			}
+
+			&__second {
+				height: 118px;
+				width: 2px;
+				border-radius: 10px;
+				background-color: color(dark);
+				position: absolute;
+				left: 49.5%;
+				top: 10.6%;
+				transform-origin: bottom;
+
+				&::after {
+					bottom: -8px;
+					left: -6px;
+					width: 13px;
+					height: 13px;
+				}
+			}
+		}
+	}
+
+	// Digital Clock
+
+	.wrapper {
+		header {
+			h1 {
+				font-size: fontSize(5);
+				letter-spacing: 4px;
+			}
+		}
+
+		.container__clock {
+			height: 100px;
+			width: 500px;
+
+			.time {
+				font-size: fontSize(5);
 			}
 		}
 	}
 }
 
 @include media-lg {
-}
+	// Main Page
 
-// Digital Clock
+	.main {
+		.heading {
+			font-size: fontSize(6);
+		}
 
-@include media-md {
-	.wrapper {
-		.container {
-			.container__clock {
-				height: 100px;
-				width: 500px;
+		.clock-btn {
+			height: 250px;
 
-				.time {
-					font-size: fontSize(3);
-				}
+			.clock-btn__analog {
+				height: 90px;
+				width: 330px;
+				font-size: fontSize(4);
+			}
+
+			.clock-btn__digital {
+				height: 90px;
+				width: 330px;
+				font-size: fontSize(4);
 			}
 		}
 	}
-}
 
-@include media-lg {
+	// Analog Clock
+
+	.main-container {
+		header {
+			h1 {
+				font-size: fontSize(6);
+				letter-spacing: 4px;
+			}
+		}
+	}
+
+	// Digital Clock
+
 	.wrapper {
-		.container {
-			.container__clock {
-				height: 150px;
-				width: 900px;
+		header {
+			h1 {
+				font-size: fontSize(6);
+				letter-spacing: 4px;
+			}
+		}
 
-				.time {
-					font-size: fontSize(4);
-				}
+		.container__clock {
+			height: 150px;
+			width: 850px;
+
+			.time {
+				font-size: fontSize(7);
 			}
 		}
 	}

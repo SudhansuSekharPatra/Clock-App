@@ -1,5 +1,4 @@
 @import "config";
-@import "responsive";
 
 body {
 	font-family: $font-normal;
@@ -31,7 +30,7 @@ body {
 		background-size: 100%;
 
 		&__hour {
-			height: 50px;
+			height: 48px;
 			width: 5px;
 			border-radius: 10px;
 			background-color: color(dark);
@@ -80,3 +79,5 @@ body {
 		}
 	}
 }
+
+@import "responsive";
