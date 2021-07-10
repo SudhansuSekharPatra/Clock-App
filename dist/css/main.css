@@ -100,14 +100,6 @@ body {
   letter-spacing: 0.3px;
 }
 
-.main footer .copyright-details .instagram-link {
-  color: #207398;
-}
-
-.main footer .copyright-details .instagram-link:hover {
-  text-decoration: underline;
-}
-
 @media (min-width: 626px) {
   .main .heading {
     font-size: 2.6rem;
